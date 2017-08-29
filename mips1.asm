@@ -1,3 +1,7 @@
+#### A área de dados abaixo define um rótulo X que localiza um endereço de
+#### memória que contém um dado do tipo word (32 bits). O valor inicial
+#### armazenado nesse endereço é 33. 
+
 .data
 X: 	.word 33
 
