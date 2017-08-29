@@ -17,6 +17,11 @@ pr_vet: la  	$t6, vetor #t6 = endereço do array
 	li 	$v0, 1
 	move 	$a0, $t6
 	syscall
+	
+	addi $a0, $0, 0xA #ascii code for LF, if you have any trouble try 0xD for CR.
+        addi $v0, $0, 0xB #syscall 11 prints the lower 8 bits of $a0 as an ascii character.
+        syscall
+        
 	j pr_vet
 
 exit: 	li $v0, 10 # colocando 10 em v0 e chamando
